@@ -1,0 +1,50 @@
+.index  {
+     box-sizing: border-box;   
+     width: 100wv;
+     min-height: 100vh;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  
+
+}
+.text{
+  height: calc(100vh - 120px);
+}
+.flower{
+  margin-top: 10px;
+ width: 50px;
+position: absolute;
+  top: -50px;
+  font-size: 24px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.btn{
+    background-color: #8BC782;
+   padding: 20px 0;
+     font-size: 30px;
+    min-width: 200px;
+    color: #fff;
+    border: none;
+ }
+ 
+@keyframes flow {
+    0% {
+        background-position: 50% -100vh
+    }
+    100% {
+        background-position: 50% 0
+    }
+}
+@keyframes fall {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  .btn{
+
+  }

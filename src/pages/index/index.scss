@@ -1,0 +1,50 @@
+.index  {
+    background: #E9E9E9 url('../../imgs/food.jpg') 50% -100vh;
+    box-sizing: border-box;   
+     width: 100wv;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    animation: flow 16s linear infinite;
+
+}
+.flower{
+ width: 50px;
+position: absolute;
+  top: -50px;
+  font-size: 24px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.btn{
+    background-color: #8BC782;
+
+     font-size: 30px;
+    min-width: 200px;
+    color: #fff;
+    box-shadow: 0 0px 1px 0px rgba(157, 174, 200, 0.25), 2px 2px 19px 4px rgba(157, 174, 200, 0.25);
+}
+ 
+@keyframes flow {
+    0% {
+        background-position: 50% -100vh
+    }
+    100% {
+        background-position: 50% 0
+    }
+}
+@keyframes fall {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  .btn{
+
+  }
